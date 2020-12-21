@@ -1,0 +1,230 @@
+body {
+	background: radial-gradient( circle at top, #FAFAD2,#F4D03F );
+	background-size: 100% 100%;
+}
+
+body p {
+  font-family: 'winchesterregular';
+}
+
+#global {
+	height:98%;
+	width: 98%;
+	max-width: 98%;
+	min-width: 850px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@font-face {
+  font-family: 'boxingregular';
+  src: url('../data/boxing-webfont.woff2') format('woff2'),
+       url('../data/boxing-webfont.woff') format('woff');
+  font-weight: normal;
+font-style: normal;
+font-family: 'winchesterregular';
+  src: url('../data/winchester.ttf-webfont.woff2') format('woff2'),
+       url('../data/winchester.ttf-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+@media (min-width: 540px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15%;
+    row-gap: 15%;
+  }
+}
+
+
+
+#logo {
+	background: url("imgages/Backcard.jpg") ;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#navigation p {
+  color: white;
+  margin-top: 2%;
+}
+
+#navigation a:hover, #navigation a:focus {
+  background: #000000;
+  
+}
+#navigation {
+  background: #181A12;
+  width: 100%;
+  height: 200px;
+}
+#navigation ul {
+  
+   margin: 0;
+   padding: 20px 10px 20px 10px;
+  list-style: none;
+  display: flex;
+  justify-content : space-around;
+}
+#navigation a {
+  color: firebrick;
+   display: block;
+   height: 5% 3%;
+   padding: 20px 10px 20px 10px;
+   line-height: 1.5;
+   font-size: .9em;
+   text-decoration: none;
+}
+
+#navigation li {
+   margin: 2% 5%;
+   margin-bottom: 0;
+   font-family: 'winchesterregular';
+   font-size: 150%;
+}
+
+#contenu {
+	background-color: wheat;
+	
+}
+#contenu {
+	width: 100%;
+	overflow: hidden;	
+}
+#contenu {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+#contenu h2 {
+  color: rgb(237,28,36);
+  font-size: 300%;
+  justify-content: center;
+  margin: 2% 28%;
+  text-decoration: underline;
+  font-family: 'winchesterregular';
+}
+
+#main {
+  margin-top: 5%;
+}
+
+.main {
+  
+  justify-content: center;
+  margin: 2% 10%;
+
+}
+
+.container {
+  position: relative;
+  perspective: 600px;
+  width: 200px;
+  height: 200px;
+}
+
+.container:hover #card {
+  transform: rotateY(180deg);
+}
+
+#card {
+  position: absolute;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  transition: transform .3s linear;
+}
+
+#card > div {
+  position: absolute;
+  width: 198px;
+  height: 198px;
+  border-radius: 10px;
+  text-align: center;
+  backface-visibility: hidden;
+  box-shadow:  0 0 5px 2px rgba(0,0,0,.3);
+}
+
+.front {
+  background: red;
+  font-size: 40px;
+  line-height: 198px;
+}
+
+.back {
+  background: url(../images/Backcard.jpg) ;
+  height: 200px; 
+  width: 200px;
+  transform: rotateY(180deg);
+}
+
+.back p {
+  font-size: 20px;
+  margin: 30% 30%;
+  margin-top: 15%;
+  color: gold;
+}
+
+#article {
+  display: block;
+  justify-content: center;
+  margin: 2% 30%;
+  margin-top: 15%;
+}
+
+#article p {
+  color: dimgray;
+}
+
+
+
+
+
+#pied {
+	padding: 20px 0;
+	width: 100%;
+	height: 140px;
+	display: flex;
+	flex-direction: row;
+	background-color: black;
+}
+
+#pied p {
+	color: white;
+	font-size: 90%;
+
+}
+
+#flooter {
+	margin-left: 0;
+	margin-bottom: 2%;
+	padding: 1em ;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: black;
+}
+
+#flooter a {
+	margin: 2% 2%;
+}
+
+#flooter p {
+	margin: 2% 7%;
+}
+
+#flooter img {
+	height: 120%;
+	width: 12%;
+	margin-right: 4%;
+}
